@@ -24,20 +24,8 @@ services:
     networks:
       - database_network
   
-  jenkins:
-    image: jenkins-jdk-17
-    container_name: jenkins-jdk-17
-    user: root
-    restart: always
-    ports:
-      - 8080:8080
-      - 50000:50000
-    volumes:
-      - jenkins_home:/var/jenkins_home
-
 volumes:
   pgadmin_vol:
   database_vol:
-  jenkins_home:
 networks:
   database_network:

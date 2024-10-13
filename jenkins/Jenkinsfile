@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Run Python') {
             steps {
-                sh python main.py -db postgresql -u dimas -hs localhost -ps ahayde -p 5432 -n cobaaja -csv ./Worlds_Best_50_Hotels.csv -tb top_50_hotels
+                echo "haloo guysss"
             }
         }
     }
