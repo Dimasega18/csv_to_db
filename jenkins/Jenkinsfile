@@ -1,27 +1,15 @@
 pipeline {
     agent any
     stages {
-        stage('Hello') {
+        stage('Run Python') {
             steps {
-                echo 'Hello World'
+                sh python main.py -db postgresql -u dimas -hs localhost -ps ahayde -p 5432 -n cobaaja -csv ./Worlds_Best_50_Hotels.csv -tb top_50_hotels
             }
         }
     }
     post {
         always {
             echo "Ini terus di post"
-        }
-        success {
-            echo 'I succeeded!'
-        }
-        unstable {
-            echo 'I am unstable :/'
-        }
-        failure {
-            echo 'I failed :('
-        }
-        changed {
-            echo 'Things were different before...'
         }
     }   
 }
