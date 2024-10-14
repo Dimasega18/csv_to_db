@@ -4,18 +4,16 @@ pipeline {
                     dbms = 'postgresql'
                     tbname = 'data_hotel'
                     dbname = 'cobaaja'
+                    USER = credentials('user')
+                    HOST = credentials('host')
+                    PASS = credentials('password')
+                    PORT = credentials('port')
                 }
 
     stages {
         stage('Run Python') {
             steps {
-                withCredentials([
-                    string(credentialsId: 'user', variable: 'USER'),
-                    string(credentialsId: 'host', variable: 'HOST'),
-                    string(credentialsId: 'password', variable: 'PASS'),
-                    string(credentialsId: 'port', variable: 'PORT')
-                ])
-                sh "python3 -db '${dbms}' -u '${USER}' -hs '${HOST}' -ps '${PASS}' -p '${PORT}' -n '${dbname}' -tbname '${tbname}'"
+                sh ('python3 -db $dbms -u $USER -hs $HOST -ps $PASS -p $PORT -n $dbname -tbname $tbname')
             }
         }
     }
