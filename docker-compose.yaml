@@ -23,6 +23,15 @@ services:
       - database_vol:/var/lib/postgresql/data
     networks:
       - database_network
+    
+  jenkins :
+    ports:
+      - 50000:50000
+      - 8080:8080
+    build: .
+    container_name: jenkins_paketlengkap
+    networks:
+      - database_network
   
 volumes:
   pgadmin_vol:

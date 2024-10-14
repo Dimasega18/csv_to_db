@@ -1,4 +1,4 @@
 import glob
 
-tes = glob.glob('./*.csv')
-print(tes)
+tes = glob.glob('./*.txt')
+print(len(tes)==0)

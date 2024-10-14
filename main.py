@@ -26,10 +26,14 @@ def connections():
     host = str(args.host)
     tbname = args.tbname
     csv_path = glob.glob('./*.csv')
-    for x in csv_path :
-        path= str(x)
-    
-    data = [username,password,port,dbname,dbms,host,x,tbname]
+
+    if len(csv_path) == 0:
+        raise ValueError("Csv file not found")
+
+    for x in csv_path:
+        path = x
+
+    data = [username,password,port,dbname,dbms,host,path,tbname]
 
     if None in data :
         raise ValueError("Insert all requirement")
@@ -63,14 +67,16 @@ try :
                 
                 row += 10
             
-            except :
-                print("All data has been inserted.")
+                if row == df.shape()[0] :
+                    break
+            
+            except Exception as e :
+                print(f"insert data error : {e}")
                 connection.close()
                 break
     else:
         raise ValueError()
     
-except :
+except Exception as e :
 
-    print("Error connection or file not csv")
-    connection.close()
+    print(f"Error connection {e}")
