@@ -13,7 +13,7 @@ parser.add_argument('-hs','--host',help='your hostname',default='localhost')
 parser.add_argument('-ps','--password',help='your db password')
 parser.add_argument('-p','--port',help='your db port',type=int)
 parser.add_argument('-n','--name',help='your db name')
-parser.add_argument('-tb','--tbname',help='path to your csv')
+parser.add_argument('-tb','--tbname',help='your table name')
 
 args = parser.parse_args()
 

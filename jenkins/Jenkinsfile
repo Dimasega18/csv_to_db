@@ -12,7 +12,7 @@ pipeline {
                     dbname = 'cobaaja'
                 }
             steps {
-                sh python3 --
+                sh python3 -db '${dbms}' -u '${user}' -hs '${host}' -ps '${pass}' -p '${port}' -n '${dbname}' -tbname '${tbname}'
             }
         }
     }
