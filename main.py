@@ -64,11 +64,12 @@ try :
                 print(f"{row} Row Inserted In {time_end-time_start} Second")
                 
                 time.sleep(10)
+
+                if row == 50 :
+                    print("All data has been inserted.")
+                    break
                 
                 row += 10
-            
-                if row == 50 :
-                    break
             
             except Exception as e :
                 print(f"insert data error : {e}")
