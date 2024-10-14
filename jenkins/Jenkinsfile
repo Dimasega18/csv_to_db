@@ -13,7 +13,7 @@ pipeline {
     stages {
         stage('Run Python') {
             steps {
-                sh ('python3 main.py -db $dbms -u $USER -hs $HOST -ps $PASS -p $PORT -n $dbname -tbname $tbname')
+                sh ('python3 main.py -db $dbms -u $USER -hs $HOST -ps $PASS -p $PORT -n $dbname -tb $tbname')
             }
         }
     }
