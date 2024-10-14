@@ -67,7 +67,7 @@ try :
                 
                 row += 10
             
-                if row == df.shape()[0] :
+                if row == 50 :
                     break
             
             except Exception as e :
