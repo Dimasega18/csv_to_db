@@ -26,8 +26,10 @@ def connections():
     host = str(args.host)
     tbname = args.tbname
     csv_path = glob.glob('./*.csv')
+    for x in csv_path :
+        path= str(x)
     
-    data = [username,password,port,dbname,dbms,host,csv_path,tbname]
+    data = [username,password,port,dbname,dbms,host,x,tbname]
 
     if None in data :
         raise ValueError("Insert all requirement")
