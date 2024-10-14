@@ -23,7 +23,7 @@ def connections():
     port = args.port
     dbname = args.name
     dbms = args.dbms
-    host = args.host
+    host = str(args.host)
     tbname = args.tbname
     csv_path = glob.glob('./*.csv')
     
