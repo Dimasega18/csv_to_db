@@ -9,7 +9,7 @@ pipeline {
                     port = credentials('port')
                     dbms = 'postgresql'
                     tbname = 'data_hotel'
-                    
+                    dbname = 'cobaaja'
                 }
             steps {
                 sh python3 --
