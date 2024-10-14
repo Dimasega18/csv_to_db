@@ -3,6 +3,7 @@ from sqlalchemy import create_engine
 import argparse
 from time import perf_counter
 import time
+import glob
 
 parser = argparse.ArgumentParser(prog='connect your db')
 
@@ -12,7 +13,6 @@ parser.add_argument('-hs','--host',help='your hostname',default='localhost')
 parser.add_argument('-ps','--password',help='your db password')
 parser.add_argument('-p','--port',help='your db port',type=int)
 parser.add_argument('-n','--name',help='your db name')
-parser.add_argument('-csv','--csvpath',help='path to your csv')
 parser.add_argument('-tb','--tbname',help='path to your csv')
 
 args = parser.parse_args()
@@ -24,8 +24,8 @@ def connections():
     dbname = args.name
     dbms = args.dbms
     host = args.host
-    csv_path = args.csvpath
     tbname = args.tbname
+    csv_path = glob.glob('./*.csv')
     
     data = [username,password,port,dbname,dbms,host,csv_path,tbname]
 

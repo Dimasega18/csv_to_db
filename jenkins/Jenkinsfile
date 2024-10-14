@@ -2,8 +2,17 @@ pipeline {
     agent any
     stages {
         stage('Run Python') {
+            environment {
+                    user = credentials('user')
+                    host = credentials('host')
+                    pass = credentials('password')
+                    port = credentials('port')
+                    dbms = 'postgresql'
+                    tbname = 'data_hotel'
+                    
+                }
             steps {
-                echo "haloo guysss"
+                sh python3 --
             }
         }
     }
