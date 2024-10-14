@@ -1,21 +1,25 @@
 pipeline {
     agent any
-    stages {
-        stage('Run Python') {
-            environment {
-                    user = credentials('user')
-                    host = credentials('host')
-                    pass = credentials('password')
-                    port = credentials('port')
+    environment {
                     dbms = 'postgresql'
                     tbname = 'data_hotel'
                     dbname = 'cobaaja'
                 }
+
+    stages {
+        stage('Run Python') {
             steps {
-                sh "python3 -db '${dbms}' -u '${user}' -hs '${host}' -ps '${pass}' -p '${port}' -n '${dbname}' -tbname '${tbname}'"
+                withCredentials([
+                    string(credentialsId: 'user', variable: 'USER'),
+                    string(credentialsId: 'host', variable: 'HOST'),
+                    string(credentialsId: 'password', variable: 'PASS'),
+                    string(credentialsId: 'port', variable: 'PORT')
+                ])
+                sh "python3 -db '${dbms}' -u '${USER}' -hs '${HOST}' -ps '${PASS}' -p '${PORT}' -n '${dbname}' -tbname '${tbname}'"
             }
         }
     }
+
     post {
         always {
             echo "Ini terus di post"
