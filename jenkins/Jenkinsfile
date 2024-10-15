@@ -20,18 +20,10 @@ pipeline {
 
     post {
         always {
-            def buildStatus = currentBuild.currentResult
-            def projectName = env.JOB_NAME
-            def buildNumber = env.BUILD_NUMBER
-            def buildUrl = env.BUILD_URL
-
-        emailext(
-            body: """Build Status : ${buildStatus}
-            Project : ${projectName} 
-            Build Number: ${buildNumber}
-            Build URL: ${buildUrl}""",
-            subject: 'From Jenkins Pipeline',
-            to: 'your.email@example.com')
+            emailext body: """Build Status : ${currentBuild.currentResult}
+            Project : ${env.JOB_NAME} 
+            Build Number: ${env.BUILD_NUMBER}
+            Build URL: ${env.BUILD_URL}""", subject: 'From Jenkins Pipeline', to: 'dimasega1811@gmail.com'
         }
     }   
 }
