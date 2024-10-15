@@ -20,7 +20,14 @@ pipeline {
 
     post {
         always {
-            echo "Ini terus di post"
+            mail to: 'aswin@crunchops.com',
+                 subject: "Jenkins Build Notification: ${currentBuild.fullDisplayName}",
+                 body: """\
+                 Build Status: ${currentBuild.currentResult}
+                 Project: ${env.JOB_NAME}
+                 Build Number: ${env.BUILD_NUMBER}
+                 Build URL: ${env.BUILD_URL}
+                 """
         }
     }   
 }
