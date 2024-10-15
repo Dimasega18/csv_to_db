@@ -48,27 +48,30 @@ connection = engine.connect()
 try :
     if (bool(connection) == True) and (connections()[6].endswith('.csv') == True) :
         print("Connection Accepted")
+
+        time.sleep(10)
         
         df = pd.read_csv(connections()[6],chunksize=10,iterator=True,low_memory=True,encoding='latin-1')
-    
+        shape = pd.read_csv(connections()[6],encoding='latin-1')
+        total_row = shape.shape[0]
         row = 10
         while True :
             try :
                 time_start =  perf_counter()
 
                 df_new = next(df).iloc[:,1:]
-                import_db = df_new.to_sql (connections()[7],con=engine,index=True,if_exists='append')
+                import_db = df_new.to_sql (connections()[7],con=engine,index=False,if_exists='append')
 
                 time_end = perf_counter()
                 
                 print(f"{row} Row Inserted In {time_end-time_start} Second")
                 
-                time.sleep(10)
-
-                if row == 50 :
+                if row == total_row :
                     print("All data has been inserted.")
                     break
                 
+                time.sleep(5)
+
                 row += 10
             
             except Exception as e :
