@@ -7,7 +7,7 @@ services:
       - PGADMIN_DEFAULT_EMAIL=${DEFAULT_EMAIL}
       - PGADMIN_DEFAULT_PASSWORD=${DEFAULT_PASSWORD}
     volumes:
-      - pgadmin_vol:/var/lib/pgadmin
+      - ./containers/admin:/var/lib/pgadmin
     networks:
       - database_network
   
@@ -20,7 +20,7 @@ services:
       - POSTGRES_USER=${POSTGRES_USER}
       - POSTGRES_DB=${POSTGRES_DB}
     volumes:
-      - database_vol:/var/lib/postgresql/data
+      - ./containers/databases:/var/lib/postgresql/data
     networks:
       - database_network
     
@@ -29,9 +29,11 @@ services:
       - ${JENKINS_AP}:50000
       - ${JENKINS_WP}:8080
     build: .
-    container_name: jenkins_paketlengkap
+    container_name: jenkins_container
     networks:
       - database_network
+    volumes:
+      - ./containers/jenkins_data:/var/jenkins_home
   
 volumes:
   pgadmin_vol:
