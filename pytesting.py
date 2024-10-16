@@ -38,6 +38,10 @@ for y in x :
     path = y
 
 class TestStringMethods(unittest.TestCase):
+
+    def test_connection(self):
+        engine = create_engine(url_engine)
+        self.assertEqual(bool(engine.connect()),True)
     
     def test_fileexist(self):
         for y in x :
@@ -66,9 +70,5 @@ class TestStringMethods(unittest.TestCase):
         df =  pd.read_csv(path)
         self.assertEqual(len(df.values)>1,True)
     
-    def test_connection(self):
-        engine = create_engine(url_engine)
-        self.assertEqual(bool(engine.connect()),True)
-
 if __name__ == '__main__':
     unittest.main()
