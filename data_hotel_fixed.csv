@@ -1,0 +1,51 @@
+,rank,name,location,total_rooms,starting_rate_dollar,hotel_ammenties,address,number
+0,1,Capella Bangkok,Bangkok,101,600.0," Swimming pool(s), spa/wellness centre, fitness centre, pet friendly, family friendly","300, 2 Charoen Krung Rd, Yan Nawa, Sathon, Bangkok 10120, Thailand",+66 2 098 3888
+1,2,Passalacqua,Lake Como,24,1300.0," Spa/wellness centre, fitness centre, family friendly","Via Besana, 59, 22010 Moltrasio CO, Italy",+39 031 44311
+2,3,Rosewood Hong Kong,Hong Kong,413,650.0," Swimming pool, spa/wellness centre, fitness centre, family friendly, Rosewood Explorers Club","18 Salisbury Rd, Tsim Sha Tsui, Hong Kong",+852 3891 8888
+3,4,Cheval Blanc,Paris,72,3000.0," Swimming pool(s), spa/wellness centre, fitness centre, pet friendly, family friendly","8 Quai du Louvre, 75001 Paris, France",+33 1 40 28 00 00
+4,5,The Upper House,Hong Kong,117,650.0," Swimming pool, fitness centre, family friendly","88 Queensway, Admiralty, Hong Kong",Not Available
+5,6,Raffles Singapore,Singapore,115,2000.0," Swimming pool(s), spa/wellness centre, fitness centre, family friendly","1 Beach Rd, Singapore 189673",+65 6337 1886
+6,7,Aman Tokyo,Tokyo,84,1800.0," Swimming pool(s), spa/wellness centre, fitness centre, family friendly","The Otemachi Tower, 1 Chome-5-6 ?temachi, Chiyoda City, Tokyo 100-0004, Japan",+81 3-5224-3333
+7,8,Soneva Fushi,Maldives,72,2800.0," Beach, swimming pool(s), spa/wellness centre, fitness centre, family friendly","Kunfunadhoo Island, Eydhafushi, Maldives",+960 660-0304
+8,9,Atlantis The Royal,Dubai,795,460.0," Over 90 swimming pools, Skyblaze fountain, waterpark, aquarium, dolphin bay, sea lion point, helipad, beach club","The Palm Jumeirah, Crescent Rd, Dubai, United Arab Emirates",+971 4 426 3000
+9,10,Nihi Sumba,Sumba Island,27,1300.0," Beach, chocolate factory, equestrian stables, surf/boat house, swimming pool(s), spa/wellness centre, fitness centre","Hoba Wawi, Wanokaka, West Sumba Regency, East Nusa Tenggara, Indonesia",+62 361 757149
+10,11,Claridge's,London,269,1200.0," Art gallery, swimming pool(s), spa/wellness centre, fitness centre, pet friendly, family friendly","Brook Street, London W1K 4HR, United Kingdom",+44 020 7629 8860
+11,12,Mandarin Oriental Bangkok,Bangkok,331,757.0," Swimming pool(s), spa/wellness centre, fitness centre, family friendly","48 Oriental Ave, Khwaeng Bang Rak, Bang Rak, Bangkok 10500, Thailand",+66 2 659 9000
+12,13,Raffles London at The OWO,London,120,1650.0," Swimming pool(s), Spa/wellness centre, Fitness centre, Spa","57 Whitehall, London SW1A 2BX",+44 020 3907 7500
+13,14,Four Seasons Bangkok at Chao Phraya River,Bangkok,299,450.0," Swimming pool(s), spa/wellness centre, fitness centre, pet friendly, family friendly, art space, kids club, beauty salon","300/1 Charoen Krung Rd, Khwaeng Yan Nawa, Khet Sathon, Bangkok 10120, Thailand",Not Available
+14,15,Hotel de Crillon,Paris,124,3000.0," Swimming pool(s), spa/wellness centre, fitness centre, pet friendly, family friendly","10 Pl. de la Concorde, 75008 Paris, France",+33 1 44 71 15 00
+15,16,Chable Yucatán,Chocholá,40,770.0," Swimming pool(s), golf, spa/wellness centre, fitness centre, pet friendly, family friendly","Tablaje 642, San Antonio Chable, 97816 Chocholá, Yucatán, Mexico",+52 55 4161 4262
+16,17,Hotel Du Cap-Eden-Roc,Antibes,111,1650.0," Swimming pool(s), seaside cabanas, gardens, spa/wellness centre, fitness centre, family friendly","167-165 Bd J. F. Kennedy, 06160 Antibes, France",+33 4 93 61 39 01
+17,18,Maroma,Riviera Maya,72,1000.0," Swimming pool(s), Spa/wellness centre, Fitness centre, Pet friendly, Family friendly, Beach","Carr. Cancún - Tulum Km 51, 77710 Riviera Maya, Q.R., Mexico",+52 984 370 0400
+18,19,Four Seasons Firenze,Florence,116,1000.0," Gardens, swimming pool(s), spa/wellness centre, fitness centre, pet friendly, family friendly","Borgo Pinti, 99, 50121 Firenze FI, Italy",+39 055 26261
+19,20,Borgo Santandrea,Amalfi,52,4000.0," Swimming pool(s), Spa/wellness centre, Fitness centre, Beach","Via Giovanni Augustariccio, 33, 84011 Amalfi SA, Italy",+39 089 831148
+20,21,Desa Potato Head,Bali,225,350.0," Beach, library, workshops, waste tour, swimming pool(s), spa/wellness centre, fitness centre, family friendly","Jl. Petitenget No.51B, Kerobokan Kelod, Kec. Kuta Utara, Kabupaten Badung, Bali 80361, Indonesia",+62 361 6207979
+21,22,Bulgari Tokyo,Tokyo,98,2000.0," Swimming pool(s), Spa/wellness centre, Fitness centre, Family friendly","2 Chome-2-1 Yaesu, Chuo City, Tokyo 104-0028, Japan",+81 3-6262-3333
+22,23,The Lana,Dubai,225,555.0," Swimming pool(s), Spa/wellness centre, Fitness centre, Family friendly, Beach",Marasi Dr - Business Bay - Dubai - United Arab Emirates,+971 4 541 7777
+23,24,Rosewood Sao Paulo,Sao Paulo,160,700.0," Swimming pool(s), spa/wellness centre, fitness centre, pet friendly, family friendly","R. Itapeva 435, Bela Vista, Sao Paulo, SP, 01332-000, Brazil",+55 11 3797-0500
+24,25,The Calile,Brisbane,175,330.0," Swimming pool(s), spa/wellness centre, fitness centre, family friendly","48 James St, Fortitude Valley QLD 4006, Australia",+61 7 3607 5888
+25,26,The Siam,Bangkok,38,1250.0," Private shuttle boat service, swimming pool(s), spa/wellness centre, theatre and music rooms, Muay Thai, fitness centre","2 Thanon Khao, Vachirapayabal, Dusit District, Bangkok 10300, Thailand",+66 2 206 6999
+26,27,Park Hyatt Kyoto,Kyoto,70,2000.0," Spa/wellness centre, fitness centre, family friendly","Japan, ?360 Kodaiji Kyoto, Higashiyama Ward, JP 605-0826",+81 75-531-1234
+27,28,Mount Nelson,Cape Town,198,950.0," Swimming pool(s), Spa/wellness centre, Fitness centre, Pet friendly, Family friendly, Tennis Courts, Gardens","76 Orange St, Gardens, Cape Town, 8001, South Africa",+27 21 483 1000
+28,29,One&Only Mandarina,Riviera Nayarit,105,1300.0," Beach, swimming pool(s), spa/wellness centre, fitness centre, pet friendly, family friendly","Carretera Federal Libre 200 Tepic-Puerto Vallarta, Municipio de Compostela, El Monteo?n, 63724 Nayari, Nay, Mexico",+52 327 689 0100
+29,30,The Carlyle,New York,192,1065.0," Spa/wellness centre, Fitness centre, Pet friendly, Family friendly, Hair Salon","35 E 76th St, New York, NY 10021, United States",+1 212-744-1600
+30,31,La Mamounia,Marrakech,209,900.0," Swimming pool(s), beach, cinema, shopping, spa/wellness centre, fitness centre, pet friendly, family friendly","Avenue Bab Jdid, Marrakesh 40040, Morocco",+212 5243-88600
+31,32,Four Seasons Madrid,Madrid,200,1200.0," Swimming pool(s), spa/wellness centre, luxury shopping centre, fitness centre, pet friendly, family friendly","C. de Sevilla, 3, 28014 Madrid, Spain",+34 910 88 33 33
+32,33,Capella Singapore,Singapore,112,900.0," Beach, swimming pool(s), spa/wellness centre, fitness centre, pet friendly, family friendly","1 The Knolls, Sentosa Island, Singapore 098297",+65 6377 8888
+33,34,Four Seasons at The Surf Club,Surfside,102,1800.0," Swimming pool(s), Spa/wellness centre, Fitness centre, Pet friendly, Family friendly, Beach, Other","9011 Collins Ave, Surfside, FL 33154, United States",+1 305-381-3333
+34,35,Hotel Bel-Air,Los Angeles,103,995.0," Swimming pool(s), Spa/wellness centre, Fitness centre, Pet friendly, Family friendlySwimming pool(s), Spa/wellness centre, Fitness centre, Pet friendly, Family friendly","701 Stone Canyon Rd, Los Angeles, CA 90077, United States",+1 310-472-1211
+35,36,Eden Rock,St. Barths,37,1700.0," Beach, spa/wellness centre, fitness centre, pet friendly, family friendly","Baie de Saint Jean, 97133, St Barthelemy",+590 590 29 79 99
+36,37,Aman New York,New York,83,1750.0," Swimming pool(s), spa/wellness centre, fitness centre, pet friendly, family friendly","730 5th Ave, New York, NY 10019, United States",+1 212-970-2626
+37,38,Royal Mansour,Marrakech,53,1900.0," Swimming pool(s), spa/wellness centre, fitness centre, pet friendly, family friendly","Rue Abou Abbas El Sebti, 40000, Morocco",+212 52980-8080
+38,39,Amangalla,Galle,31,850.0," Swimming pool(s), spa/wellness centre, family friendly","10 Church St, Galle 80000, Sri Lanka",+94 912 233 388
+39,40,Le Bristol,Paris,190,3200.0," Swimming pool(s), spa/wellness centre, fitness centre, pet friendly, family friendly","112 Rue du Faubourg Saint-Honore, 75008 Paris, France",+33 1 53 43 43 00
+40,41,Gleneagles,Auchterarder,232,700.0," Outdoor pursuits, swimming pool(s), spa/wellness centre, fitness centre, pet friendly, family friendly","Gleneagles Hotel, Auchterarder PH3 1NF, United Kingdom",+44 01764 449041
+41,42,Castello di Reschio,Lisciano Niccone,36,1300.0," Swimming pool(s), Spa/wellness centre, Fitness centre, Family friendly, Horseriding","Tabaccaia di Reschio, 06060 Lisciano Niccone PG, Italy",+39 075 844362
+42,43,Suján Jawai,Rajasthan,12,1200.0,Not Available,"Jawai Dam District, Pali Marwar, Rajasthan 306126, India",+91 11 4617 2700
+43,44,Singita - Kruger National Park,Kruger National Park,23,1900.0," Game drives, nature walks, art galleries, yoga, swimming pool(s), spa/wellness centre, fitness centre","N'wanetsi River, Kruger National Park Mpumalanga, Kruger Park, 1350, South Africa",+27 21 683 3424
+44,45,Six Senses Zighy Bay,Zaghi,82,1150.0," Swimming pool(s), Spa/wellness centre, Fitness centre, Family friendly, Beach","Zighy Bay Rd, Dibba Dib, Oman",+968 26 735555
+45,46,The Connaught,London,122,1250.0," Swimming pool(s), cigar merchant, spa/wellness centre, fitness centre, pet friendly, family friendly","The Connaught, 16 Carlos Pl, London W1K 2AL, United Kingdom",+44 020 7499 7070
+46,47,The Brando,Tetiaroa,35,800.0," Beach, Pool","Tetiaroa, Arue 98702, French Polynesia",+689 40 86 63 00
+47,48,Hotel Esencia,Tulum,51,1100.0," Beach, tennis court, swimming pool(s), spa/wellness centre, fitness centre, pet friendly","77734 Quintana Roo, Mexico",+52 984 873 4830
+48,49,The Tasman,Hobart,152,235.0," Fitness centre, Wine cellar, Meeting facilities","12 Murray St, Hobart TAS 7000, Australia",+61 3 6240 6000
+49,50,Kokomo Private Island,Yaukuve Levu Island,26,3500.0," Swimming pool(s), Spa/wellness centre, Fitness centre, Family friendly, Beach, PADI Certified Marine Centre with 30 unique Diving spots, Fleet of 15 Boats","Yaukuve Levu Island, Fiji",+679 776 4441
