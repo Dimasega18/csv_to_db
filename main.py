@@ -4,6 +4,7 @@ import argparse
 from time import perf_counter
 import time
 import glob
+import os
 
 parser = argparse.ArgumentParser(prog='connect your db')
 
@@ -68,6 +69,7 @@ try :
                 
                 if row == total_row :
                     print("All data has been inserted.")
+                    os.remove(connections()[6])
                     break
                 
                 time.sleep(5)

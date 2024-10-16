@@ -1,4 +1,4 @@
-,rank,name,location,total_rooms,starting_rate_dollar,hotel_ammenties,address,number
+id,rank,name,location,total_rooms,starting_rate_dollar,hotel_ammenties,address,number
 0,1,Capella Bangkok,Bangkok,101,600.0," Swimming pool(s), spa/wellness centre, fitness centre, pet friendly, family friendly","300, 2 Charoen Krung Rd, Yan Nawa, Sathon, Bangkok 10120, Thailand",+66 2 098 3888
 1,2,Passalacqua,Lake Como,24,1300.0," Spa/wellness centre, fitness centre, family friendly","Via Besana, 59, 22010 Moltrasio CO, Italy",+39 031 44311
 2,3,Rosewood Hong Kong,Hong Kong,413,650.0," Swimming pool, spa/wellness centre, fitness centre, family friendly, Rosewood Explorers Club","18 Salisbury Rd, Tsim Sha Tsui, Hong Kong",+852 3891 8888
