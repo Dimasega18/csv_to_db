@@ -76,7 +76,7 @@ if __name__ == '__main__':
 
     parser.add_argument('-db','--dbms',help='name your dbms',choices=('postgresql','mysql'))
     parser.add_argument('-u','--user',help='your db username')
-    parser.add_argument('-hst','--host',help='your hostname',default='localhost')
+    parser.add_argument('-hs','--host',help='your hostname',default='localhost')
     parser.add_argument('-pw','--password',help='your db password')
     parser.add_argument('-p','--port',help='your db port',type=int)
     parser.add_argument('-n','--name',help='your db name')
