@@ -4,7 +4,9 @@ import pandas as pd
 import argparse
 from sqlalchemy import create_engine
 
-def connections(args):
+def connections():
+    args = parser.parse_args()
+
     username = args.user
     password = args.password
     port = args.port
@@ -78,7 +80,5 @@ if __name__ == '__main__':
     parser.add_argument('-ps','--password',help='your db password')
     parser.add_argument('-p','--port',help='your db port',type=int)
     parser.add_argument('-n','--name',help='your db name')
-
-    args = parser.parse_args()
 
     unittest.main()
