@@ -4,7 +4,9 @@ import pandas as pd
 import argparse
 from sqlalchemy import create_engine
 
-def connections(args):
+def connections():
+    args = parser.parse_args()
+
     username = args.user
     password = args.password
     port = args.port
@@ -17,9 +19,8 @@ def connections(args):
     return data
 
 def url_engine():
-    conn_data = connections(args)
-    url = f'{conn_data[4]}://{conn_data[0]}:{conn_data[1]}@{conn_data[5]}:{conn_data[2]}/{conn_data[3]}'
-    return url
+    url_engine = f'{data_conn[4]}://{data_conn[0]}:{data_conn[1]}@{data_conn[5]}:{data_conn[2]}/{data_conn[3]}'
+    return url_engine
 
 def csv_file():
     x = glob.glob('./*.csv')
@@ -75,11 +76,11 @@ if __name__ == '__main__':
 
     parser.add_argument('-db','--dbms',help='name your dbms',choices=('postgresql','mysql'))
     parser.add_argument('-u','--user',help='your db username')
-    parser.add_argument('-hs','--host',help='your hostname',default='localhost')
-    parser.add_argument('-ps','--password',help='your db password')
+    parser.add_argument('-hst','--host',help='your hostname',default='localhost')
+    parser.add_argument('-pw','--password',help='your db password')
     parser.add_argument('-p','--port',help='your db port',type=int)
     parser.add_argument('-n','--name',help='your db name')
 
-    args = parser.parse_args()
+    data_conn = connections()
 
     unittest.main()
