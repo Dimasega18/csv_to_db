@@ -12,7 +12,6 @@ parser.add_argument('-hs','--host',help='your hostname',default='localhost')
 parser.add_argument('-ps','--password',help='your db password')
 parser.add_argument('-p','--port',help='your db port',type=int)
 parser.add_argument('-n','--name',help='your db name')
-args = parser.parse_args()
 
 def connections():
     username = args.user
@@ -70,8 +69,9 @@ class TestStringMethods(unittest.TestCase):
     
     def test_input(self):
         self.assertEqual(connections()[2].isnumeric(),True)
-        
+
 
 
 if __name__ == '__main__':
+    args = parser.parse_args()
     unittest.main()
