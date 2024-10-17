@@ -4,21 +4,19 @@ import pandas as pd
 import argparse
 from sqlalchemy import create_engine
 
-def connections():
-    args = parser.parse_args()
-
+def connections(args):
     username = args.user
     password = args.password
     port = args.port
     dbname = args.name
     dbms = args.dbms
     host = str(args.host)
-
     data = [username,password,port,dbname,dbms,host]
-    
-    return data
 
-def url_engine():
+    return data
+    
+def url_engine(args):
+    data_conn = connections(args)
     url_engine = f'{data_conn[4]}://{data_conn[0]}:{data_conn[1]}@{data_conn[5]}:{data_conn[2]}/{data_conn[3]}'
     return url_engine
 
@@ -27,9 +25,10 @@ def csv_file():
     return x
 
 class TestStringMethods(unittest.TestCase):
-
+    
     def test_connection(self):
-        engine = create_engine(url_engine())
+        
+        engine = create_engine(url_engine(args))
         self.assertEqual(bool(engine.connect()),True)
 
     def test_fileexist(self):
@@ -67,11 +66,11 @@ class TestStringMethods(unittest.TestCase):
         self.assertEqual(len(df.values)>1,True)
     
     def test_input(self):
-        self.assertEqual(connections()[2].isnumeric(),True)
-
+        self.assertEqual(connections(args)[2].isnumeric(),True)
 
 
 if __name__ == '__main__':
+
     parser = argparse.ArgumentParser(prog='connect your db')
 
     parser.add_argument('-db','--dbms',help='name your dbms',choices=('postgresql','mysql'))
@@ -81,6 +80,6 @@ if __name__ == '__main__':
     parser.add_argument('-p','--port',help='your db port',type=int)
     parser.add_argument('-n','--name',help='your db name')
 
-    data_conn = connections()
+    args = parser.parse_args()
 
     unittest.main()
