@@ -12,8 +12,6 @@ parser.add_argument('-hs','--host',help='your hostname',default='localhost')
 parser.add_argument('-ps','--password',help='your db password')
 parser.add_argument('-p','--port',help='your db port',type=int)
 parser.add_argument('-n','--name',help='your db name')
-parser.add_argument('-tb','--tbname',help='your table name')
-
 args = parser.parse_args()
 
 def connections():
@@ -70,5 +68,10 @@ class TestStringMethods(unittest.TestCase):
         df =  pd.read_csv(path)
         self.assertEqual(len(df.values)>1,True)
     
+    def test_input(self):
+        self.assertEqual(connections()[2].isnumeric(),True)
+        
+
+
 if __name__ == '__main__':
     unittest.main()

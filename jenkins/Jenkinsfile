@@ -14,7 +14,7 @@ pipeline {
 
         stage('Run Testing') {
             steps {
-                sh ('python3 -m unittest main.py -db $dbms -u $USER -hs $HOST -ps $PASS -p $PORT -n $dbname')
+                sh ('python3 -m unittest pytesting.py -db $dbms -u $USER -hs $HOST -ps $PASS -p $PORT -n $dbname')
             }
         }
 
