@@ -82,4 +82,4 @@ if __name__ == '__main__':
 
     args = parser.parse_args()
 
-    unittest.main()
+    unittest.main(argv=['first-arg-is-ignored'], exit=False)
