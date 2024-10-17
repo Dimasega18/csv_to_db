@@ -4,9 +4,7 @@ import pandas as pd
 import argparse
 from sqlalchemy import create_engine
 
-def connections():
-    args = parser.parse_args()
-
+def connections(args):
     username = args.user
     password = args.password
     port = args.port
@@ -19,8 +17,9 @@ def connections():
     return data
 
 def url_engine():
-    url_engine = f'{connections()[4]}://{connections()[0]}:{connections()[1]}@{connections()[5]}:{connections()[2]}/{connections()[3]}'
-    return url_engine
+    conn_data = connections(args)
+    url = f'{conn_data[4]}://{conn_data[0]}:{conn_data[1]}@{conn_data[5]}:{conn_data[2]}/{conn_data[3]}'
+    return url
 
 def csv_file():
     x = glob.glob('./*.csv')
@@ -80,5 +79,7 @@ if __name__ == '__main__':
     parser.add_argument('-ps','--password',help='your db password')
     parser.add_argument('-p','--port',help='your db port',type=int)
     parser.add_argument('-n','--name',help='your db name')
+
+    args = parser.parse_args()
 
     unittest.main()
