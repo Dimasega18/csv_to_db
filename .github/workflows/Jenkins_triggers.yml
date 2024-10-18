@@ -1,11 +1,11 @@
-name: Trigger jenkins job
-
+name: CURL CLI ACTION
 on: push
 jobs:
   curl:
     runs-on: ubuntu-latest
     steps:
+    - uses: actions/checkout@master
     - name: curl
-      uses: sozo-design/curl@v1.0.2
+      uses: enflo/curl-action@master
       with:
-        args: ${{secrets.URL_JENKINS}}
+        curl: ${{ secrets.URL_JENKINS }}
