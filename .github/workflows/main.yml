@@ -12,5 +12,4 @@ jobs:
     steps:
     - name: Trigger Jenkins Job via API
       run: |
-      
         curl -X POST ${{secrets.URL_JENKINS}}
