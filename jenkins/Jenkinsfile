@@ -8,6 +8,7 @@ pipeline {
                     HOST = credentials('host')
                     PASS = credentials('password')
                     PORT = credentials('port')
+                    EMAIL = credentials('gmail')
                 }
 
     stages {
@@ -30,7 +31,7 @@ pipeline {
             emailext body: """Build Status : ${currentBuild.currentResult}
             Project : ${env.JOB_NAME} 
             Build Number: ${env.BUILD_NUMBER}
-            Build URL: ${env.BUILD_URL}""", subject: 'From Jenkins Pipeline', to: 'dimasega1811@gmail.com'
+            Build URL: ${env.BUILD_URL}""", subject: 'From Jenkins Pipeline', to: '${EMAIL}'
         }
     }   
 }
