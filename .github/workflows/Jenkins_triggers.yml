@@ -1,0 +1,16 @@
+name: Trigger jenkins job
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: jenkins_job
+      run: |
+        curl ${{secrets.URL_JENKINS}}
