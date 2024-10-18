@@ -1,16 +1,11 @@
 name: Trigger jenkins job
 
-on:
-  push:
-    branches: [ "main" ]
-
+on: push
 jobs:
-  build:
-
+  curl:
     runs-on: ubuntu-latest
-
     steps:
-    - uses: actions/checkout@v2
-    - name: jenkins_job
-      run: |
-        curl ${{secrets.URL_JENKINS}}
+    - name: curl
+      uses: sozo-design/curl@v1.0.2
+      with:
+        args: ${{secrets.URL_JENKINS}}
